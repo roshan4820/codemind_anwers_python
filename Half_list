@@ -1,0 +1,9 @@
+N=int(input())
+l=[int(i) for i in input().split()]
+output=[]
+for i in range(N-1,(N//2)-1,-1):
+    output.append(l[i])
+for i in range(N//2):
+    output.append(l[i])
+for i in output:
+    print(i,end=" ")
