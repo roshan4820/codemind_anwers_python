@@ -1,0 +1,14 @@
+n=int(input())
+temp=n
+s=0
+while(n!=0):
+    rem=n%10
+    a=1
+    for i in range(rem,0,-1):
+        a=a*i
+    s=s+a
+    n=n//10
+if s==temp:
+    print("The number",temp,"is a strong number")
+else:
+    print("The number",temp,"is not a strong number")
