@@ -1,0 +1,3 @@
+p,r,t=map(int,input().split())
+res=p*((r/100)+1)**t
+print(format(res,".2f"))
