@@ -1,0 +1,15 @@
+N=int(input())
+a=65
+for i in range(N):
+    for j in range(N):
+        print(chr(a),end=" ")
+    print()
+    a=a+1
+
+
+OUTPUT:
+AAAAA
+BBBBB
+CCCCC
+DDDDD
+EEEEE
