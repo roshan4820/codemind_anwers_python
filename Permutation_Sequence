@@ -1,0 +1,9 @@
+n,k=map(int,input().split())
+from itertools import permutations
+x=[]
+for i in range(1,n+1):
+    x.append(i)
+    p=permutations(x)
+    a=list(p)
+for i in a[k-1]:
+    print(i,end="")
