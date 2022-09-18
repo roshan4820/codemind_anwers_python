@@ -1,0 +1,15 @@
+n=int(input())
+for i in range(n):
+    a=int(input())
+    l=[int(i) for i in input().split()]
+    c=0
+    for i in l:
+        for j in l:
+            if i!=j:
+                b=i+j
+                if b in l:
+                    c=c+1
+    if c>1:
+        print(c//2)
+    else:
+        print("-1")
