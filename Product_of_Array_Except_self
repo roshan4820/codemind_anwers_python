@@ -1,0 +1,11 @@
+n=int(input())
+l=[int(i) for i in input().split()]
+x=[]
+for i in range(len(l)):
+    s=1
+    for j in range(len(l)):
+        if l[j]!=l[i]:
+            s*=l[j]
+    x.append(s)
+for i in x:
+    print(i,end=" ")
