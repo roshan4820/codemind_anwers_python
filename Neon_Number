@@ -1,0 +1,12 @@
+n=int(input())
+temp=n
+a=n*n
+s=0
+while(a!=0):
+    rem=a%10
+    s=s+rem
+    a=a//10
+if s==temp:
+    print("Neon Number")
+else:
+    print("Not Neon Number")
