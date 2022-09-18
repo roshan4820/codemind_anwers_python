@@ -1,0 +1,10 @@
+import math
+n=int(input())
+l=[int(i) for i in input().split()]
+sum=0
+for i in l:
+    x=math.sqrt(i)
+    y=(x-math.floor(x))
+    if y==0:
+        sum=sum+i
+print(sum)
