@@ -1,0 +1,15 @@
+n=int(input())
+l=[int(i) for i in input().split()]
+o=[]
+e=[]
+for i in range(n):
+    if i%2==0:
+        e.append(l[i])
+    else:
+        o.append(l[i])
+    r=sum(o)
+    r1=sum(e)
+if r-r1==0:
+    print("YES")
+else:
+    print("NO")
