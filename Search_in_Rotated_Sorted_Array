@@ -1,0 +1,12 @@
+n=int(input())
+l=[int(i) for i in input().split()]
+a=int(input())
+#b=list(set(l))
+max=0
+for i in range(len(l)):
+    if a==l[i]:
+        max=i
+if max!=0:
+    print(max)
+else:
+    print("-1")
