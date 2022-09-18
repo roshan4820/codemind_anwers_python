@@ -1,0 +1,17 @@
+mat=[]
+n=int(input())
+for i in range(n):
+    r=[int(i) for i in input().split()]
+    mat.append(r)
+p,s=0,0
+for i in range(n):
+    for j in range(n):
+        if i==j:
+            p+=mat[i][j]
+        if i+j==n-1:
+            s+=mat[i][j]
+print("Principal Diagonal:",end="")
+print(p)
+print("Secondary Diagonal:",end="")
+print(s)
+
