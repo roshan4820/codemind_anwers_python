@@ -1,0 +1,21 @@
+def rearrange(arr,n):
+    temp = n*[None]
+    small,large = 0,n-1
+    f=True
+    for i in range(n):
+        if f is True:
+            temp[i]=arr[large]
+            large-=1
+        else:
+            temp[i]=arr[small]
+            small+=1
+        f=bool(1-f)
+    for i in range(n):
+        arr[i]=temp[i]
+    print(*arr)
+x=int(input())
+l=[]
+for i in range(x):
+    n=int(input())
+    a =list(map(int,input().split()))
+    rearrange(a,n)
