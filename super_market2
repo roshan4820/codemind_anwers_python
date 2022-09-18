@@ -1,0 +1,13 @@
+n=int(input())
+l=[int(i) for i in input().split()]
+x=[]
+a=0
+for i in l:
+    if l.count(i)==1:
+        x.append(i)
+        a=1
+if a==1:
+    for i in x:
+        print(i,end=" ")
+else:
+    print("-1")
