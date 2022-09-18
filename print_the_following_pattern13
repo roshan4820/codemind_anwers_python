@@ -1,0 +1,21 @@
+N=int(input())
+r=65+N
+for i in range(65,r):
+    for j in range(i+1,r):
+        print(" ",end="")
+    for k in range(65,i+1):
+        a=chr(k)
+        print(a,end="")
+    for m in range(i-1,64,-1):
+        b = chr(m)
+        print(b,end="")
+    print()
+    
+
+
+OUTPUT:
+    A
+   ABA
+  ABCBA
+ ABCDCBA
+ABCDEDCBA
