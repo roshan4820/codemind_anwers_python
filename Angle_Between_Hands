@@ -1,0 +1,4 @@
+hh,mm=map(int,input().split(":"))
+ang=abs((hh*30)-((11/2)*mm))
+res=360-ang
+print(min(ang,res))
