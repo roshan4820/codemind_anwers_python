@@ -1,0 +1,17 @@
+T=int(input())
+for i in range(T):
+    n,k=map(int,input().split())
+    s=input()
+    i=0;
+    j=k-1
+    res=""
+    while i<j:
+        res+=s[i]
+        res+=s[j]
+        i+=1
+        j-=1
+    if i==j:
+        res=res+s[i]
+    m=res[::-1]
+    o=s[k:]
+    print(m+o)
