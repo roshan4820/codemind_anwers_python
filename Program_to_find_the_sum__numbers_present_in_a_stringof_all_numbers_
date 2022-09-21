@@ -1,0 +1,7 @@
+s=input()
+x=0
+for i in s:
+    if i.isdigit():
+        a=int(i)
+        x+=a
+print(x)
