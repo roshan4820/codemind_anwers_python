@@ -1,0 +1,11 @@
+s=input()
+v="aeiou"
+c,ans=0,0
+for i in s:
+    if i in v:
+        c+=1
+    else:
+        if ans<c:
+            ans=c
+            c=0
+print(ans)
