@@ -1,0 +1,17 @@
+def reverse(s1):
+    if len(s1)==1:
+        return s1
+    s2=""
+    for i in range(len(s1)-1,-1,-1):
+        s2+=s1[i]
+    return s2
+s=input()
+ans=""
+for i in range(len(s)):
+    s1=""
+    for j in range(i,len(s)):
+        s1+=s[j]
+        if s1==reverse(s1):
+            if len(s1)>len(ans):
+                    ans=s1
+print(ans)
