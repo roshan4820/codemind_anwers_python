@@ -1,0 +1,7 @@
+n=int(input())
+l=[int(i) for i in input().split()]
+x=[]
+for i in range(0,n,+2):
+    for j in range(l[i]):
+        x.append(l[i+1])
+print(*x,sep=' ')
