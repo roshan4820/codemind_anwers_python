@@ -1,0 +1,12 @@
+n=int(input())
+l=[int(i) for i in input().split()]
+x,f=[],0
+for i in l:
+    if l.count(i)==1:
+        x.append(i)
+        f=1
+if f==1:
+    print(max(x))
+else:
+    print(-1)
+    
