@@ -1,0 +1,8 @@
+n=int(input())
+l=[int(i) for i in input().split()]
+x,c=[],0
+for i in l:
+    if i not in x:
+        x.append(i)
+        c+=l.count(i)//2
+print(c)
