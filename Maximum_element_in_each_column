@@ -1,0 +1,11 @@
+m,n=map(int,input().split())
+mat=[]
+for i in range(m):
+    l=list(map(int,input().split()))
+    mat.append(l)
+for i in range(n):
+    ans=0
+    for j in range(m):
+        if ans<mat[j][i]:
+            ans=mat[j][i]
+    print(ans)
