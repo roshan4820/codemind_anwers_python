@@ -1,0 +1,10 @@
+a=int(input())
+b=int(input())
+mat,sum=[],0
+for i in range(a):
+    l=list(map(int,input().split()))
+    mat.append(l)
+for i in range(a):
+    for j in range(b):
+        sum+=mat[i][j]
+print(sum)
