@@ -1,0 +1,7 @@
+n=int(input())
+l=[int(i) for i in input().split()]
+x=[]
+for i in l:
+    x.append(abs(i*i))
+x.sort()
+print(*x,sep=' ')
