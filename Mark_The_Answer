@@ -1,0 +1,10 @@
+n,x=map(int,input().split())
+l=[int(i) for i in input().split()]
+c=s=0
+for i in l:
+    if i>x:
+        s+=1
+    if i<=x and s<2:
+        c+=1
+print(c)
+        
