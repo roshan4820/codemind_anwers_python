@@ -1,0 +1,17 @@
+t=int(input())
+for i in range(t):
+    n=int(input())
+    p=[int(i) for i in input().split()]
+    q=[int(i) for i in input().split()]
+    x=[]
+    for i in range(1,len(p)):
+        if p[i] not in x:
+            x.append(p[i])
+    for i in range(1,len(q)):
+        if q[i] not in x:
+            x.append(q[i])
+    if len(x)==n:
+        print('YES')
+    else:
+        print("NO")
+    
