@@ -1,0 +1,12 @@
+n=int(input())
+l=[int(i) for i in input().split()]
+n1=int(input())
+l1=[int(i) for i in input().split()]
+c=0
+for i in l1:
+    if i in l:
+        c+=1
+if c==n1:
+    print("True")
+else:
+    print("False")
