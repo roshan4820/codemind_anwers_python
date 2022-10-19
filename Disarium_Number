@@ -1,0 +1,12 @@
+n=int(input())
+temp,s,i=n,0,0
+x=len(str(n))
+while n!=0:
+    rem=n%10
+    s=s+rem**(x-i)
+    n=n//10
+    i=i+1
+if s==temp:
+    print('True')
+else:
+    print('False')
