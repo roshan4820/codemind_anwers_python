@@ -1,0 +1,14 @@
+n=int(input())
+f=0
+p=[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 
+47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97,101, 103]
+for i in range(2,n):
+    for j in range(i,n):
+        if i*j==n and i in p and j in p:
+            f=1
+            a,b=i,j
+            break
+if f==1:
+    print(a,b)
+else:
+    print(-1)
