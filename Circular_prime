@@ -1,0 +1,21 @@
+n=int(input())
+p,p1,c,c1=0,0,0,0
+for i in range(2,n+1):
+    if n%i==0:
+        c+=1
+if c==1:
+    p=1
+s=str(n)[::-1]
+a=int(s)
+for i in range(2,a+1):
+    if a%i==0:
+        c1+=1
+if c1==1:
+    p1=1
+if p1==1 and p==1:
+    print('circular prime')
+elif p==1 and p1==0:
+    print('prime but not a circular prime')
+else:
+    print('not prime')
+    
