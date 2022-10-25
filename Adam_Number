@@ -1,0 +1,14 @@
+n=int(input())
+s=str(n)
+a=''
+c=''
+for i in range(len(s)-1,-1,-1):
+    a+=s[i]
+b=int(a)**2
+x=str(b)
+for i in range(len(x)-1,-1,-1):
+    c+=x[i]
+if n**2==int(c):
+    print('True')
+else:
+    print('False')
