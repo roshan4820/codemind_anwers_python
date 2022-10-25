@@ -1,0 +1,6 @@
+n=int(input())
+s=str(n)
+x=[]
+for i in s:
+    x.append(int(i))
+print(max(x))
