@@ -1,0 +1,17 @@
+s=input()
+v=c=d=ws=0
+vol='aeiouAEIOU'
+co='bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ'
+for i in s:
+    if i in vol:
+        v+=1
+    if i in co:
+        c+=1
+    if i.isnumeric():
+        d+=1
+    if i==' ':
+        ws+=1
+print('Vowels:',v)
+print('Consonants:',c)
+print('Digits:',d)
+print('White spaces:',ws)
