@@ -1,0 +1,4 @@
+s=input()
+a=input()
+b=sorted(s+a)
+print(*b,sep='')
