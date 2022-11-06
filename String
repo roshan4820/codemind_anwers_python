@@ -1,0 +1,9 @@
+c=0
+S="Doesn't contain digit"
+for i in input():
+    if i.isnumeric():
+        c+=1
+if c>1:
+    print('Contains',c,'digit')
+else:
+    print(S)
